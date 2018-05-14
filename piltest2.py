@@ -11,7 +11,7 @@ img1.convert('RGBA')
 drawbuffer = ImageDraw.Draw(img1)
 
 img2 = Image.open('kinoco.jpg')
-img1.paste(img2, (-102, 648), img2.split()[3])
+img1.paste(img2, (-102, 648))
 
 img1.show()
 saveimg = photos.save_image(img1)
